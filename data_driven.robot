@@ -14,21 +14,27 @@ Test Template     Calculate
 Library           CalculatorLibrary.py
 
 *** Test Cases ***    Expression    Expected
-Addition              12 + 2 + 2    16
+TestCase#1 - Addition
+                      12 + 2 + 2    16
                       2 + -3        -1
 
-Subtraction           12 - 2 - 2    8
+TestCase#2 - Subtraction
+                      12 - 2 - 2    8
                       2 - -3        5
 
-Multiplication        12 * 2 * 2    48
+TestCase#3 - Multiplication
+                      12 * 2 * 2    48
                       2 * -3        -6
 
-Division              12 / 2 / 2    3
+TestCase#4 - Division
+                      12 / 2 / 2    3
                       2 / -3        -1
 
-Failing               1 + 1         3
+TestCase#5 - Failing
+                      1 + 1         3
 
-Calculation error     [Template]    Calculation should fail
+TestCase#6 - Calculation error
+                      [Template]    Calculation should fail
                       kekkonen      Invalid button 'k'.
                       ${EMPTY}      Invalid expression.
                       1 / 0         Division by zero.
